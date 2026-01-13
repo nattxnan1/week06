@@ -1,0 +1,59 @@
+/* จัดกึ่งกลางการ์ดบนหน้า */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* การ์ดสินค้า */
+.product-card {
+    background-color: #ffffff;          /* พื้นหลังสีขาว */
+    max-width: 300px;                   /* ความกว้างสูงสุด 300px */
+    padding: 15px;                      /* ระยะห่างภายใน */
+    border-radius: 10px;                /* ขอบมนเล็กน้อย */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* เงาให้มีมิติ */
+    text-align: center;                 /* จัดกึ่งกลางข้อความทั้งหมด */
+}
+
+/* รูปภาพสินค้า */
+.product-image {
+    width: 100%;                        /* กว้างเต็มการ์ด */
+    border-top-left-radius: 10px;       /* ขอบมนด้านบน */
+    border-top-right-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* ชื่อสินค้า */
+.product-title {
+    font-size: 18px;
+    color: #333333;
+    margin: 10px 0 5px;
+}
+
+/* ราคา */
+.product-price {
+    font-size: 16px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* ปุ่มเพิ่มลงตะกร้า */
+.add-to-cart-btn {
+    background-color: #28a745;          /* สีเขียวโดดเด่น */
+    color: #ffffff;
+    border: none;                        /* ไม่มีเส้นขอบ */
+    padding: 10px 20px;
+    border-radius: 5px;                  /* ขอบมนเล็กน้อย */
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #218838;           /* เปลี่ยนสีเมื่อ hover */
+}
